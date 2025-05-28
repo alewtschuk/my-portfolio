@@ -26,7 +26,7 @@ function CustomLink({ href, text, className = "" }: CustomLinkProps) {
   )
 }
 
-function MailLink({ href, text, className = "" }: CustomLinkProps) {
+function HomeLink({ href, text, className = "" }: CustomLinkProps) {
   return (
     <Link
       href={href}
@@ -35,10 +35,6 @@ function MailLink({ href, text, className = "" }: CustomLinkProps) {
       rel="noopener noreferrer"
     >
       <span>{text}</span>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-1 w-3 h-3">
-        <path d="M7 7h10v10"></path>
-        <path d="M7 17 17 7"></path>
-      </svg>
     </Link>
   )
 }
@@ -58,7 +54,7 @@ function Item({ number, content }: ItemProps) {
   )
 }
 
-export default function Home() {
+export default function ThingsPage() {
   return (
     <main className="min-h-screen bg-[#191A1A] text-white p-6 md:p-12 lg:p-20">
       <div className="max-w-7xl mx-auto">
@@ -66,8 +62,7 @@ export default function Home() {
 
           {/* About Me Section */}
           <div className="about-me">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif italic mb-4">HEY, I'M ALEX</h1>
-            <div className="w-full max-w-[150px]">
+            {/* <div className="w-full max-w-[150px]">
               <Image
                 src="/portfolio_files/alex.jpeg"
                 alt="Portrait of me"
@@ -75,61 +70,11 @@ export default function Home() {
                 height={200}
                 className="w-full"
               />
-            </div>
-            <p className="font-mono text-xs leading-relaxed">
-              software engineer building on the internet. exploring at the edge. passionate about technology, biology, and what makes things tick.
-            </p>
-            <p className="font-mono text-sm">
-              <MailLink href="mailto:alex@lewtschuk.com" text="alex@alewtschuk.com" />
-            </p>
-            <h2 className="font-sans text-sm mb-1">ON HERE</h2>
-            <div className="font-mono text-xs space-y-4 mt-1">
-                  <div className="flex gap-4">
-                    <CustomLink href="/portfolio_files/resume.pdf" text="resumé" />
-                    <CustomLink href="/portfolio_files/UTM_guide.pdf" text="utm x86 guide" />
-                  </div>
-                  <div className="flex gap-4">
-                    <CustomLink href="/things" text="things" />
-                    <CustomLink href="/portfolio_files/pulsepoint.pdf" text="pulse-point" />
-                  </div>
-                </div>
-            {/* <p className="font-mono text-xs mt-1" >
-              <CustomLink href="/portfolio_files/resume.pdf" text="resumé" />
-            </p> */}
-            <div className="space-y-12">
-              <div>
-                <h2 className="font-sans text-sm mb-4 mt">FIND ME ON THE INTERNET @</h2>
-                <div className="font-mono text-xs space-y-4">
-                  <div className="flex gap-4">
-                    <CustomLink href="https://github.com/alewtschuk" text="github" />
-                    <CustomLink href="https://linkedin.com/in/alewtschuk" text="linkedin" />
-                  </div>
-                  <div className="flex gap-4">
-                    <CustomLink href="https://medium.com/alewtschuk" text="medium" />
-                    <CustomLink href="https://x.com/iambecomewhale" text="x" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="font-sans text-[10px] text-gray-600/50 mt-4">
-              inspired by @tylerkim inspired by @tinabmai. good developers copy, great develeopers steal, or something like that...
-            </div>
-          </div>
-
-          {/* Spacer Column */}
-          <div></div>
-
-          {/* Currently Section */}
-          <section>
-            <div className="hidden lg:block">
-              <h2 className="font-sans text-base mb-12">PRESENT</h2>
-            </div>
-
-            <div className="lg:hidden mb-12 space-y-4">
-              <h2 className="font-sans text-sm">PRESENT</h2>
-              <div className="w-full border-t border-dotted border-gray-400"></div>
-            </div>
-
+            </div> */}
+            <h2 className="font-sans text-sm mb-1">
+              <HomeLink href="/" text="[TAKE ME BACK HOME]" />
+            </h2>
+            <section>
             <div className="space-y-8 text-xs">
               <Item
                 number="00"
@@ -155,6 +100,31 @@ export default function Home() {
               />
             </div>
           </section>
+            <div className="space-y-12">
+              <div>
+                <h2 className="font-sans text-sm mb-4 mt-max">FIND ME ON THE INTERNET @</h2>
+                <div className="font-mono text-xs space-y-4">
+                  <div className="flex gap-4">
+                    <CustomLink href="https://github.com/alewtschuk" text="github" />
+                    <CustomLink href="https://linkedin.com/in/alewtschuk" text="linkedin" />
+                  </div>
+                  <div className="flex gap-4">
+                    <CustomLink href="https://medium.com/alewtschuk" text="medium" />
+                    <CustomLink href="https://x.com/iambecomewhale" text="x" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="font-sans text-[10px] text-gray-600/50 mt-4">
+              inspired by @tylerkim inspired by @tinabmai. good developers copy, great develeopers steal, or something like that...
+            </div>
+          </div>
+
+          {/* Spacer Column */}
+          <div></div>
+
+          {/* Currently Section */}
+          
 
           {/* Previously Section */}
           <section>
