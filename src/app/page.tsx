@@ -89,7 +89,6 @@ export default function Home() {
                     <CustomLink href="/portfolio_files/UTM_guide.pdf" text="utm x86 guide" />
                   </div>
                   <div className="flex gap-4">
-                    <CustomLink href="/things" text="things" />
                     <CustomLink href="/portfolio_files/pulsepoint.pdf" text="pulse-point" />
                   </div>
                 </div>
@@ -105,7 +104,7 @@ export default function Home() {
                     <CustomLink href="https://linkedin.com/in/alewtschuk" text="linkedin" />
                   </div>
                   <div className="flex gap-4">
-                    <CustomLink href="https://medium.com/alewtschuk" text="medium" />
+                    <CustomLink href="https://digitalstatic.substack.com" text="substack" />
                     <CustomLink href="https://x.com/iambecomewhale" text="x" />
                   </div>
                 </div>
@@ -206,7 +205,7 @@ export default function Home() {
                   <p>
                     involved in developing{" "}
                     <CustomLink href="https://www.boisestate.edu/coen/news-events/annual-design-showcase/design-showcase-brochure/#:~:text=CS%2D2%20Coachr,to%20the%20game" text="coachr" />
-                    {" "}an AI driven golf training application.
+                    {" "}an ai driven golf training application.
                   </p>
                 }
               />
