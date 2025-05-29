@@ -132,7 +132,10 @@ export default function Home() {
             <div className="space-y-8 text-xs">
               <Item
                 number="00"
-                content={<p>launching rmapp, a native go based macos command line utility to serve as rm for your apps. no more drag to trash, no more artifacts</p>}
+                content={<p>
+                          launching @{" "}
+                          <CustomLink href="https://rmapp.sh" text="rmapp" />
+                          , a native go based macos command line utility to serve as rm for your apps. no more drag to trash, no more artifacts</p>}
               />
               <Item
                 number="01"

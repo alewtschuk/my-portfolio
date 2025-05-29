@@ -1601,18 +1601,6 @@ table {
     src: url(/portfolio_files/mondwest.otf) format("opentype");
 }
 @font-face {
-    font-family: murs;
-    src: url(/portfolio_files/murs.otf) format("opentype");
-}
-@font-face {
-    font-family: neuebit;
-    src: url(/portfolio_files/neuebit.otf) format("opentype");
-}
-@font-face {
-    font-family: magineer;
-    src: url(/portfolio_files/magineer.otf) format("opentype");
-}
-@font-face {
     font-family: spacemono;
     src: url(/portfolio_files/spacemono.ttf) format("truetype");
 }
